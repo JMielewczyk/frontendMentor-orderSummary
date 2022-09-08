@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body, section.main , .order_Section, .plan_Wrapper , .small_Wrapper, .plan_Window, .btn_Wrapper {
+    display: flex;
+}
+
+.active {
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+}
+section.main {
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.order_Section {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 20px 10px 0px 10px;
+}
+
+h1 {
+    font-size: 24px;
+    transition: 1s;
+}
+
+h1.active {
+    transform: translateY(-60%);
+}
+
+.underH1 {
+    text-align: center;
+    padding-top: 20px;
+    color: hsl(224, 23%, 55%)
+}
+
+
+
+.plan_Window {
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+    width: 90%;
+    height: 70px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.plan_Window .plan_Wrapper:nth-of-type(3) {
+}
+
+.plan_Window.active {
+    height: 210px;
+    transform: translateY(-58%);
+}
+
+.plan_Wrapper {
+    padding: 10px;
+    justify-content: space-between;
+    height: 70px;
+    /* transition: 2s; */
+}
+.plan_Wrapper img {
+    width: 20%;
+    object-fit: contain;
+}
+
+.plan_Wrapper button {
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);   
+    color: white;
+    width: 30%;
+    cursor: pointer;
+}
+.small_Wrapper {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small_Wrapper p {
+color: hsl(224, 23%, 55%);    
+}
+
+.payment, .cancel {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.payment {
+    height: 50%;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 12px 15px hsl(225, 100%, 85%);
+}
+
+.payment:focus {
+    background-color: hsl(223, 47%, 23%);
+}
+
+.cancel {
+    height: 25%;
+    background-color: rgba(100%, 100%, 100%, 0);
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel:focus {
+    color:black;
+}
+
+.btn_Wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35%;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+
+@media (min-width:1024px) {
+    .plan_Wrapper button:hover{
+    background-color:hsl(223, 47%, 23%);
+}
+
+.payment:hover {
+    background-color: hsl(223, 47%, 23%);
+}
+
+.payment:focus {
+    background-color: hsl(223, 47%, 23%);
+}
+
+.cancel:hover {
+    color: black;
+}
+
+}
