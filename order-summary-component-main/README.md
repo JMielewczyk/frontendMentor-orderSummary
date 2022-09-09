@@ -1,1 +1,2 @@
-Frontend Mentor Challenge - working...
+Frontend Mentor Challenge - challenge done.
+Added more to this challenge. An expandable list of available subscriptions just to make better user experience :)
