@@ -39,7 +39,7 @@ section.main {
 
 h1 {
     font-size: 24px;
-    transition: 1s;
+    transition: .7s;
 }
 
 h1.active {
@@ -52,7 +52,6 @@ h1, h2 {
 
 .underH1 {
     text-align: center;
-    /* padding-top: 20px; */
     padding: 20px 20px 0 20px;
     color: hsl(224, 23%, 55%)
 }
@@ -68,7 +67,7 @@ h1, h2 {
     width: 90%;
     height: 70px;
     overflow: hidden;
-    transition: 1s;
+    transition: .7s;
 }
 
 
@@ -143,12 +142,14 @@ color: hsl(224, 23%, 55%);
 
 
 .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: black;
     }
 
 
