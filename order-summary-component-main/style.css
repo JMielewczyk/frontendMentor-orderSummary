@@ -13,10 +13,6 @@ body, section.main , .order_Section, .plan_Wrapper , .small_Wrapper, .plan_Windo
     display: flex;
 }
 
-.active {
-
-}
-
 body {
     height: 100vh;
     width: 100vw;
@@ -50,12 +46,16 @@ h1.active {
     transform: translateY(-60%);
 }
 
-.underH1 {
-    text-align: center;
-    padding-top: 20px;
-    color: hsl(224, 23%, 55%)
+h1, h2 {
+    color: hsl(223, 47%, 23%);
 }
 
+.underH1 {
+    text-align: center;
+    /* padding-top: 20px; */
+    padding: 20px 20px 0 20px;
+    color: hsl(224, 23%, 55%)
+}
 
 
 .plan_Window {
@@ -71,8 +71,6 @@ h1.active {
     transition: 1s;
 }
 
-.plan_Window .plan_Wrapper:nth-of-type(3) {
-}
 
 .plan_Window.active {
     height: 210px;
@@ -83,7 +81,6 @@ h1.active {
     padding: 10px;
     justify-content: space-between;
     height: 70px;
-    /* transition: 2s; */
 }
 .plan_Wrapper img {
     width: 20%;
@@ -118,6 +115,7 @@ color: hsl(224, 23%, 55%);
     background-color: hsl(245, 75%, 52%);
     color: white;
     box-shadow: 0 12px 15px hsl(225, 100%, 85%);
+    font-weight: 700;
 }
 
 .payment:focus {
@@ -128,6 +126,7 @@ color: hsl(224, 23%, 55%);
     height: 25%;
     background-color: rgba(100%, 100%, 100%, 0);
     color: hsl(224, 23%, 55%);
+    font-weight: 900;
 }
 
 .cancel:focus {
